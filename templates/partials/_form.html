@@ -1,0 +1,12 @@
+<form action="{% url 'busca' %}" method="get">
+    <div class="form-group row">
+        <div class="col-12">
+            <input type="search"
+                   class="form-control"
+                   value="{{ request.GET.busca }}"
+                   id="search-input"
+                   placeholder="Faça sua pesquisa"
+                   name="busca">
+        </div>
+    </div>
+</form>
